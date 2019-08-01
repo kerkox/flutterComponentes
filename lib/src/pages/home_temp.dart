@@ -16,17 +16,17 @@ final opciones = ['Uno', 'Dos', 'Tres', 'Cuatro','Cinco'];
     );
   }
 
-List<Widget> _crearItems(){
+// List<Widget> _crearItems(){
 
-  List<Widget> lista = new List<Widget>();
+//   List<Widget> lista = new List<Widget>();
 
-  for(var opt in opciones){
-    final tempWidget = ListTile(title: Text(opt));
-    lista..add(tempWidget);
-    lista..add(Divider());
-  }
-  return lista;
-}
+//   for(var opt in opciones){
+//     final tempWidget = ListTile(title: Text(opt));
+//     lista..add(tempWidget);
+//     lista..add(Divider());
+//   }
+//   return lista;
+// }
 List<Widget> _crearItemsCorta(){
  return  opciones.map((item ){
     return Column(
