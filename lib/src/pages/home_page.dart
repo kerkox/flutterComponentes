@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
       );
 
       opciones..add(widgetTemp)
-              ..add(Divider());
+              ..add(Divider( color: Colors.black38, thickness: 0.6, ));
     });
     return opciones;
   }

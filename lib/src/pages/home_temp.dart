@@ -20,15 +20,15 @@ final opciones = ['Uno', 'Dos', 'Tres', 'Cuatro','Cinco'];
 
 //   List<Widget> lista = new List<Widget>();
 
-//   for(var opt in opciones){
+//   for(String opt in opciones){
 //     final tempWidget = ListTile(title: Text(opt));
-//     lista..add(tempWidget);
-//     lista..add(Divider());
+//     lista..add(tempWidget)
+//          ..add(Divider());
 //   }
 //   return lista;
 // }
 List<Widget> _crearItemsCorta(){
- return  opciones.map((item ){
+ return  opciones.map(( item ){
     return Column(
       children: <Widget>[
         ListTile(
@@ -38,7 +38,10 @@ List<Widget> _crearItemsCorta(){
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: (){},
         ),
-        Divider()
+        Divider( 
+          color: Colors.black,
+          thickness: 50.0,
+        )
       ],
     );
   }).toList();
